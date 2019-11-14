@@ -42,8 +42,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
     $fwrite1 = fwrite($fopen1, "TOKEN => ".$token." \n NOMOR => ".$number." \n");
     fclose($fopen1);
     echo "[+] File Token saved in ".$live." \n";
-    echo "[+]Process Redeem GOFOODBOBA07 \n";
-				$data3 = '{"promo_code":"GOFOODBOBA07"}';
+    echo "[+]Process Redeem GOFOODSANTAI19 \n";
+				$data3 = '{"promo_code":"GOFOODSANTAI19"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
 					echo $claims->data->message;
@@ -57,8 +57,8 @@ If ($claims->data->message != ""){
 					echo $claims1->data->message;
 				echo "\n";
 					sleep(5);
-					echo "[+]Process Redeem gofoodsushi10 \n";
-						$data5 = '{"promo_code":"GOFOODSUSHI10"}';
+					echo "[+]Process Redeem GOFOODSANTAI11 \n";
+						$data5 = '{"promo_code":"GOFOODSANTAI11"}';
 				$claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
 				$claims2 = json_decode($claim2[0]);
 					echo $claims2->data->message;
@@ -70,7 +70,7 @@ If ($claims->data->message != ""){
 												
 							
 	}else{
-		echo "Nomor udah dipake";
+		echo "SO TAPAKE NOMOR";
 	}
 	function nama()
 	{
