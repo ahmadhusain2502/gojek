@@ -50,8 +50,8 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 					echo "\n";
 If ($claims->data->message != ""){
 					sleep(5);
-					echo "[+]Process Redeem GOFOODSANTAI19 \n";
-						$data4 = '{"promo_code":"GOFOODSANTAI19"}';
+					echo "[+]Process Redeem WADAWGOJEK \n";
+						$data4 = '{"promo_code":"WADAWGOJEK"}';
 				$claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
 				$claims1 = json_decode($claim1[0]);
 					echo $claims1->data->message;
